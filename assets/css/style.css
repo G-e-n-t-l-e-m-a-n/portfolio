@@ -110,9 +110,6 @@ body.no-scroll {
   position: relative;
   /* modificators */
 }
-.nav__link:first-child {
-  margin-right: 0;
-}
 .nav__link:hover {
   color: #6A696B;
 }
