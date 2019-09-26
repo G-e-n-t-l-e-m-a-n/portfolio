@@ -1,0 +1,58 @@
+@import "variables";
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+*,
+*:before,
+*:after   {
+	box-sizing: border-box;     /* все "padding" будут идти во внутрь и не будет менятся размер блоков */
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: @black;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+/* block */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/work";
+@import "blocks/helpers";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer"; 
+@import "blocks/modal"; 
+@import "blocks/modal-work"; 
+@import "blocks/timeline"; 
+@import "blocks/progress-bar"; 
+@import "blocks/contact"; 
+@import "blocks/form"; 
+@import "blocks/slick"; 
+@import "blocks/toggle"; 
+
+
+
+
+
+
+

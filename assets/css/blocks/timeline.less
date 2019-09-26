@@ -1,0 +1,127 @@
+// main: ../style.less 
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+	margin: 70px auto;
+	max-width: 768px;
+    position: relative;
+    
+    @media @tablet {
+        margin: 40px auto;
+    }
+
+    @media @mobile {
+        margin: 20px auto;
+    }
+
+	&:before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 100%;
+		background-color: @black;
+		position: absolute;
+		top: 0;
+		left: 50%;
+        z-index: 1;
+        
+        @media @mobile {
+		    display: none;            
+        }
+	}
+}
+
+.timeline__coll {
+	width: 50%;
+
+	&--left {
+		text-align: right;
+        padding-right: 48px;
+        
+        @media @mobile {
+            padding-right: 0;
+            text-align: left;
+        }
+	}
+
+	&--right {
+        padding-left: 48px;
+        
+        @media @mobile {
+            padding-left: 0;
+        }
+    }
+    
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.timeline__title {
+	margin-bottom: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	color: @black;
+    text-transform: uppercase;
+    
+    @media @mobile {
+        text-align: center;
+        margin: 10px 0px 30px 0;          
+    }
+}
+
+.timeline__item {
+    margin-bottom: 38px;
+    
+    @media @mobile {
+        &--center {
+            text-align: center;
+        }
+    }
+
+	&-awards {
+		display: flex;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.timeline__date {
+	margin-bottom: 15px;
+	display: block;    /* для тега "time" */
+	text-decoration: underline;
+	font-size: 14px;
+	color: @black;
+}
+
+.timeline__content {
+	padding-left: 20px;
+}
+
+.timeline__subtitle {
+	margin-bottom: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	color: @black;
+}
+
+.timeline__position {
+	font-size: 14px;
+	font-style: italic;
+	color: @black;
+
+	&--right {
+		font-style: normal;
+	}
+}
+
+.timeline__text {
+	margin-top: 10px;
+	line-height: 1.5;
+	font-size: 12px;
+	font-weight: 300;
+	color: @gray;
+}

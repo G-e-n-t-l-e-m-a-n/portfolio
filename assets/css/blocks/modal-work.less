@@ -1,0 +1,174 @@
+// main: ../style.less 
+
+.modal-work {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @notebook {
+        margin: 0 10px;
+    }
+
+    @media @tablet {
+        margin: 0;
+    }
+}
+
+.modal-work__preview {
+	width: 65%;
+	position: relative;
+    overflow: hidden;
+
+    @media @tablet {
+        width: 100%;
+        margin: 0;
+    }  
+}
+
+.modal-work__photo {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    
+    @media @tablet {
+        position: static;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-work__content {
+	width: 35%;
+	padding: 45px 100px 15px 26px;
+    position: relative;
+    
+    @media @tablet {
+        width: 100%;
+        padding: 50px 0 20px;
+    }
+
+    @media @mobile {
+        width: 100%;
+        padding: 30px 0 10px;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 33px;
+    
+    @media @tablet {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
+.modal-work__title {
+	margin-bottom: 3px;
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+    color: @black;
+    
+    @media @mobile {
+        font-size: 25px;
+    }
+
+    @media @mobile-sm {
+        font-size: 20px;
+    }
+}
+
+.modal-work__info {
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+    color: @gray;
+    
+    @media @mobile {
+        font-size: 16px;
+    }
+}
+
+.modal-work__info-divider {
+    margin: 0 15px 0 28px;
+    
+    @media @mobile {
+        margin: 0 5px 0 10px;
+    }
+}
+
+.modal-work__client {
+    margin-bottom: 33px;
+    
+    @media @tablet {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.modal-work__client-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: @black;
+	margin-bottom: 3px;
+}
+
+.modal-work__client-company {
+	font-size: 14px;
+	font-style: italic;
+	color: @gray;
+}
+
+.modal-work__text {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 2;
+	color: @gray;
+    margin-bottom: 130px;
+
+    @media @notebook {
+        margin-bottom: 0;
+    }
+    
+    @media @tablet {
+        margin-bottom: 0;
+        margin: 0 15px;
+    }
+}
+
+.modal-work__footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 26px 17px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    z-index: 1;
+
+    @media @notebook {
+        display: none;
+    }
+    
+    @media @tablet {
+        display: none;
+    }
+}
+
+.modal-work__btn {
+	font-size: 14px;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	font-family: inherit;
+	color: @black;
+	text-transform: uppercase;
+
+	&:focus {
+		outline: none;
+	}
+}
+
