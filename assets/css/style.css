@@ -174,7 +174,7 @@ body.no-scroll {
   border-bottom: 1px solid rgba(106, 105, 107, 0.3);
   padding-bottom: 120px;
   position: relative;
-  background: url(assets/img/symbols.png) right bottom no-repeat;
+  background: url("../img/symbols.png") right bottom no-repeat;
 }
 @media (max-width: 991px) {
   .intro__inner {
