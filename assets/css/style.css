@@ -522,7 +522,7 @@ body.no-scroll {
 }
 .reviews {
   background-color: #332F30;
-  background-image: url(/assets/img/reviewsbg.png);
+  background-image: url(../img/reviewsbg.png);
   background-position: center;
   background-repeat: no-repeat;
   padding: 68px 0;
